@@ -4,8 +4,8 @@ using UnityEngine;
 public class SurvivalMod : MonoBehaviour
 {
     [SerializeField] private float thirstLevel = 100f;
-
     [SerializeField] private float thirstSpeed;
+    [SerializeField] private float timer = 10f;
 
     [SerializeField] private bool thirsty;
     [SerializeField] private bool parched;
@@ -38,17 +38,23 @@ public class SurvivalMod : MonoBehaviour
         //if statement check if thirstLevel is equal to, or lower, than 50 and if thirsty)
         if (thirstLevel <= 0 && thirsty)
         {
-            Damageable.DamageMessage msg = new Damageable.DamageMessage()
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
             {
-                amount = 1,
-                damager = this,
-                damageSource = new Vector3(x: 0,y: 0, z:0),
-                direction = new Vector3(x: 0,y: 0, z:0),
-                throwing = false,   
-                stopCamera = false,
+                
+                Damageable.DamageMessage msg = new Damageable.DamageMessage()
+                {
+                    amount = 1,
+                    damager = this,
+                    damageSource = new Vector3(x: 0, y: 0, z: 0),
+                    direction = new Vector3(x: 0, y: 0, z: 0),
+                    throwing = false,
+                    stopCamera = false,
+                };
+                playerObject.GetComponent<Damageable>().ApplyDamage(msg);
+                Debug.Log(message: "Damage by Thirst");
+                timer = 10f;
             }
-            playerObject.GetComponent<Damageable>().ApplyDamage();
-            Debug.Log(message: "Damage by Thirst");
         }
     }
 }
