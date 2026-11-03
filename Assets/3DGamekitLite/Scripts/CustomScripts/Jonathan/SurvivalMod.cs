@@ -17,6 +17,6 @@ public class SurvivalMod : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        thirstLevel = thirstLevel - thirstSpeed;
+        thirstLevel -= Mathf.Clamp(value: thirstSpeed*Time.deltaTime, min: 0, max: thirstLevel);
     }
 }
