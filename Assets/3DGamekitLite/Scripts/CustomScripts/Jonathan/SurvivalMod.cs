@@ -103,6 +103,7 @@ public class SurvivalMod : MonoBehaviour
 
     public void AddWater()
     {
+        Debug.Log("Added random water");
         waterBottles++;
     }
     }
