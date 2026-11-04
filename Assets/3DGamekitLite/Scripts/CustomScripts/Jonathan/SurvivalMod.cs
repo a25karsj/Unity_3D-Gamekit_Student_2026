@@ -10,6 +10,8 @@ public class SurvivalMod : MonoBehaviour
     [SerializeField] private bool thirsty;
     [SerializeField] private bool parched;
 
+    public int waterBottles = 0;
+
     [SerializeField] private GameObject playerObject;
     
     
@@ -95,7 +97,13 @@ public class SurvivalMod : MonoBehaviour
                 
                 timer = 10f;
             }
+            
         }
+    }
+
+    public void AddWater()
+    {
+        waterBottles++;
     }
     }
 
