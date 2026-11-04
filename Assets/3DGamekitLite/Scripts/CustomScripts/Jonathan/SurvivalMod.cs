@@ -91,7 +91,7 @@ public class SurvivalMod : MonoBehaviour
                
                 playerObject.GetComponent<Damageable>().ApplyDamage(msg);
                 
-                Debug.Log(message: "Damage by Thirst");
+                Debug.Log(message: "Damaged by Thirst");
                 
                 timer = 10f;
             }
