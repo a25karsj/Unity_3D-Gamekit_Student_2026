@@ -34,6 +34,44 @@ public class SurvivalMod : MonoBehaviour
             Debug.Log(message:"Getting Thirsty...");
             thirsty = true;
         }
+
+        // Become parched at 0
+        
+        if (thirstLevel <= 0f && parched == false)
+
+        {
+            Debug.Log("You are parched");
+            parched = true;
+        }
+
+        // Parched makes you take damage
+        
+        if (parched)
+        {
+            timer -= Time.deltaTime;
+            ;
+            if (timer <= 0f)
+                
+            {
+
+                Damageable.DamageMessage msg = new Damageable.DamageMessage()
+                {
+                    amount = 1,
+                    damager = this,
+                    damageSource = new Vector3(0, 0, 0),
+                    direction = new Vector3(0, 0, 0),
+                    throwing = false,
+                    stopCamera = false,
+                };
+            
+
+            playerObject.GetComponent<Damageable>().ApplyDamage(msg);
+
+            Debug.Log("Damage my Thirst");
+
+            timer = 10f;
+        }
+    }
         
         //if statement check if thirstLevel is equal to, or lower, than 50 and if thirsty)
         if (thirstLevel <= 0 && thirsty)
@@ -41,7 +79,6 @@ public class SurvivalMod : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0f)
             {
-                
                 Damageable.DamageMessage msg = new Damageable.DamageMessage()
                 {
                     amount = 1,
@@ -51,10 +88,15 @@ public class SurvivalMod : MonoBehaviour
                     throwing = false,
                     stopCamera = false,
                 };
+               
                 playerObject.GetComponent<Damageable>().ApplyDamage(msg);
+                
                 Debug.Log(message: "Damage by Thirst");
+                
                 timer = 10f;
             }
         }
     }
-}
+    }
+
+
