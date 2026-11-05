@@ -16,6 +16,8 @@ public class SurvivalMod : MonoBehaviour
     
     
     
+    
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -72,14 +74,37 @@ public class SurvivalMod : MonoBehaviour
             timer = 10f;
             }   
         }
-        
+
+         void ResetThirst()
+        {
+            thirstLevel = 100f;
+            thirsty = false;
+            parched = false;
+
+            timer = 10f;    
+            Debug.Log("Reset Thirst");
+        }
+
+        void Drink()
+        {
+            if (waterBottles > 0)
+            {
+                waterBottles--;
+                ResetThirst();
+                Debug.Log("You drank some water");
+            }
+            else
+            {
+                Debug.Log("You don't have any water");
+            }
+        }
     }
 
     public void AddWater()
     {
         Debug.Log("Added random water");
-        waterBottles++;
+        waterBottles = Random.Range(1,3);
     }
-    }
+}
 
 
