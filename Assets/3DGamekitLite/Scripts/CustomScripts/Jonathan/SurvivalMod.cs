@@ -85,8 +85,10 @@ public class SurvivalMod : MonoBehaviour
             Debug.Log("Reset Thirst");
         }
 
-        void Drink()
+        void Drink() 
         {
+           
+            // 
             if (waterBottles > 0)
             {
                 waterBottles--;
