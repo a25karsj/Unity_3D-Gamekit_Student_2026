@@ -66,6 +66,7 @@ GameObject:
   - component: {fileID: 23105413348060914}
   - component: {fileID: 64810308498445900}
   - component: {fileID: 54472876201041426}
+  - component: {fileID: 4180599268400051285}
   m_Layer: 19
   m_Name: DestructableBox_Chunk
   m_TagString: Untagged
@@ -194,6 +195,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4180599268400051285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057760939268628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1111805920070670
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +239,7 @@ GameObject:
   - component: {fileID: 23131834157102828}
   - component: {fileID: 64569209643257300}
   - component: {fileID: 54958303855218422}
+  - component: {fileID: 8069917405722245543}
   m_Layer: 19
   m_Name: DestructableBox_Chunk5
   m_TagString: Untagged
@@ -335,6 +368,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8069917405722245543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111805920070670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1187805066841518
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +412,7 @@ GameObject:
   - component: {fileID: 23308351406890180}
   - component: {fileID: 64052507872488034}
   - component: {fileID: 54137800458000322}
+  - component: {fileID: 5540606282650674677}
   m_Layer: 19
   m_Name: DestructableBox_Chunk7
   m_TagString: Untagged
@@ -476,6 +541,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5540606282650674677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187805066841518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1318089303424570
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +585,7 @@ GameObject:
   - component: {fileID: 23231063297459274}
   - component: {fileID: 64734559308973134}
   - component: {fileID: 54443562368707480}
+  - component: {fileID: 9010316570966646430}
   m_Layer: 19
   m_Name: DestructableBox_Chunk14
   m_TagString: Untagged
@@ -617,6 +714,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9010316570966646430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318089303424570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1393089340077170
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +758,7 @@ GameObject:
   - component: {fileID: 23062042244815236}
   - component: {fileID: 64049662880904014}
   - component: {fileID: 54096629949123030}
+  - component: {fileID: 5218018739873832720}
   m_Layer: 19
   m_Name: DestructableBox_Chunk13
   m_TagString: Untagged
@@ -758,6 +887,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5218018739873832720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393089340077170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1395262686665914
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +931,7 @@ GameObject:
   - component: {fileID: 23744391946462176}
   - component: {fileID: 64855117156494372}
   - component: {fileID: 54513127651726316}
+  - component: {fileID: 3889184944443934774}
   m_Layer: 19
   m_Name: DestructableBox_Chunk4
   m_TagString: Untagged
@@ -899,6 +1060,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3889184944443934774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395262686665914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1478066460284010
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +1168,7 @@ GameObject:
   - component: {fileID: 23674483504574714}
   - component: {fileID: 64270480009533010}
   - component: {fileID: 54864268751139694}
+  - component: {fileID: 6426328034683321945}
   m_Layer: 19
   m_Name: DestructableBox_Chunk16
   m_TagString: Untagged
@@ -1104,6 +1297,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6426328034683321945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602779672323856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1676491869467478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1431,7 @@ GameObject:
   - component: {fileID: 23080946754364214}
   - component: {fileID: 64640243450091138}
   - component: {fileID: 54952653704979808}
+  - component: {fileID: 6936180167351591162}
   m_Layer: 19
   m_Name: DestructableBox_Chunk10
   m_TagString: Untagged
@@ -1335,6 +1560,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6936180167351591162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681811184619038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1691087937426540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1604,7 @@ GameObject:
   - component: {fileID: 23734693030515410}
   - component: {fileID: 64036843679473064}
   - component: {fileID: 54759824241239828}
+  - component: {fileID: 8413377684136676412}
   m_Layer: 19
   m_Name: DestructableBox_Chunk2
   m_TagString: Untagged
@@ -1476,6 +1733,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8413377684136676412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691087937426540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1702263018271700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1777,7 @@ GameObject:
   - component: {fileID: 23276945494555082}
   - component: {fileID: 64821737472786894}
   - component: {fileID: 54914062182287362}
+  - component: {fileID: 4859924092067819459}
   m_Layer: 19
   m_Name: DestructableBox_Chunk17
   m_TagString: Untagged
@@ -1617,6 +1906,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4859924092067819459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702263018271700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1720363055953560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1950,7 @@ GameObject:
   - component: {fileID: 23035985826819670}
   - component: {fileID: 64569119638641228}
   - component: {fileID: 54642203501037878}
+  - component: {fileID: 4854454761968257603}
   m_Layer: 19
   m_Name: DestructableBox_Chunk12
   m_TagString: Untagged
@@ -1758,6 +2079,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4854454761968257603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720363055953560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1720444653943636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,6 +2123,7 @@ GameObject:
   - component: {fileID: 23820524871504448}
   - component: {fileID: 64125771565876272}
   - component: {fileID: 54350177447554084}
+  - component: {fileID: 2862081796996663682}
   m_Layer: 19
   m_Name: DestructableBox_Chunk15
   m_TagString: Untagged
@@ -1899,6 +2252,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2862081796996663682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720444653943636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1734003870627190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +2296,7 @@ GameObject:
   - component: {fileID: 23232241240400280}
   - component: {fileID: 64006493169782642}
   - component: {fileID: 54791806111296000}
+  - component: {fileID: 4966266826166539123}
   m_Layer: 19
   m_Name: DestructableBox_Chunk11
   m_TagString: Untagged
@@ -2040,6 +2425,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4966266826166539123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734003870627190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1738868367793594
 GameObject:
   m_ObjectHideFlags: 0
@@ -12110,6 +12526,7 @@ GameObject:
   - component: {fileID: 23583811039348962}
   - component: {fileID: 64511420575368098}
   - component: {fileID: 54774085141402580}
+  - component: {fileID: 3647265362063257496}
   m_Layer: 19
   m_Name: DestructableBox_Chunk6
   m_TagString: Untagged
@@ -12238,6 +12655,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3647265362063257496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889811734103110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1901623676808238
 GameObject:
   m_ObjectHideFlags: 0
@@ -12251,6 +12699,7 @@ GameObject:
   - component: {fileID: 23439531239524800}
   - component: {fileID: 64898770140443146}
   - component: {fileID: 54330958339593676}
+  - component: {fileID: 76280051239810132}
   m_Layer: 19
   m_Name: DestructableBox_Chunk1
   m_TagString: Untagged
@@ -12379,6 +12828,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &76280051239810132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901623676808238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1926575859195856
 GameObject:
   m_ObjectHideFlags: 0
@@ -12392,6 +12872,7 @@ GameObject:
   - component: {fileID: 23930922332374554}
   - component: {fileID: 64219271187290832}
   - component: {fileID: 54097568945095668}
+  - component: {fileID: 6518507869420876199}
   m_Layer: 19
   m_Name: DestructableBox_Chunk8
   m_TagString: Untagged
@@ -12520,6 +13001,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6518507869420876199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926575859195856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1978226534483108
 GameObject:
   m_ObjectHideFlags: 0
@@ -12533,6 +13045,7 @@ GameObject:
   - component: {fileID: 23043546465570830}
   - component: {fileID: 64865180939690098}
   - component: {fileID: 54194804768202664}
+  - component: {fileID: 8781519119386040359}
   m_Layer: 19
   m_Name: DestructableBox_Chunk3
   m_TagString: Untagged
@@ -12661,6 +13174,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8781519119386040359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978226534483108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1994379732741598
 GameObject:
   m_ObjectHideFlags: 0
@@ -12674,6 +13218,7 @@ GameObject:
   - component: {fileID: 23769207469437368}
   - component: {fileID: 64874288674026260}
   - component: {fileID: 54245306270781164}
+  - component: {fileID: 820289743823536889}
   m_Layer: 19
   m_Name: DestructableBox_Chunk9
   m_TagString: Untagged
@@ -12802,3 +13347,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &820289743823536889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994379732741598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -475570755
+      Data2: 1095102986
+      Data3: 1918669226
+      Data4: -1125964847
+    Path: event:/Interactables/Destructable_Box
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
