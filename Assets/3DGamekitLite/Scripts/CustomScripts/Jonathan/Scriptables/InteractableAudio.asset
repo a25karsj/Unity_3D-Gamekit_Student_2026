@@ -28,11 +28,11 @@ MonoBehaviour:
     Path: event:/Interactables/Destructible_Box
   switchAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1492820739
+      Data2: 1182251831
+      Data3: 1388762800
+      Data4: 895368120
+    Path: event:/Interactables/Door_Switch
   doorAudio:
     Guid:
       Data1: 0

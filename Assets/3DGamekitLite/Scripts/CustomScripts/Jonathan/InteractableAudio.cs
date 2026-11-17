@@ -14,8 +14,20 @@ public class InteractableAudio : ScriptableObject
       RuntimeManager.PlayOneShot(pickupHealthAudio);
    }
    
+   //Declared a method that should play the boxDestroyAudio with 3D-positioning by referencing a transform position
    public void BoxDestroyPlay(Transform objectTransform)
    {
       RuntimeManager.PlayOneShot(boxDestroyAudio, objectTransform.position);
+   }
+
+   public void SwitchPlay(Transform objectTransform)
+   {
+      RuntimeManager.PlayOneShot(switchAudio, objectTransform.position);
+   }
+   
+   public void DoorPlay(Transform objectTransform)
+   {
+      RuntimeManager.PlayOneShot(doorAudio, objectTransform.position);
+      
    }
 }
