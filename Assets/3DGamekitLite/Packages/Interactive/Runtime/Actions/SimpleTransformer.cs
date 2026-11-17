@@ -1,4 +1,7 @@
+using System;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 namespace Gamekit3D.GameCommands
 {
@@ -27,6 +30,9 @@ namespace Gamekit3D.GameCommands
         float direction = 1f;
 
         protected Platform m_Platform;
+
+       //Declaring an EventInstance to use for playing and stopping doorSounds or similar types of SFX
+        private EventInstance eventInstance;
         
 
         protected override void Awake()
@@ -36,10 +42,13 @@ namespace Gamekit3D.GameCommands
             m_Platform = GetComponentInChildren<Platform>();
         }
 
+        
+        //This is where the door starts opening
         public override void PerformInteraction()
         {
             activate = true;
             if (OnStartCommand != null) OnStartCommand.Send();
+            Debug.Log("Door Opened");
         }
 
         public void FixedUpdate()
@@ -65,7 +74,7 @@ namespace Gamekit3D.GameCommands
 
         public virtual void PerformTransform(float position)
         {
-
+            
         }
 
         void LoopPingPong()
@@ -78,6 +87,7 @@ namespace Gamekit3D.GameCommands
             position = Mathf.Repeat(time, 1f);
         }
 
+       //This is where the door closes
         void LoopOnce()
         {
             position = Mathf.Clamp01(time);
@@ -86,6 +96,7 @@ namespace Gamekit3D.GameCommands
                 enabled = false;
                 if (OnStopCommand != null) OnStopCommand.Send();
                 direction *= -1;
+                Debug.Log("Door Closed");
             }
         }
     }
