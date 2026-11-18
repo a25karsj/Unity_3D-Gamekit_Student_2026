@@ -33,6 +33,21 @@ namespace Gamekit3D.GameCommands
 
        //Declaring an EventInstance to use for playing and stopping doorSounds or similar types of SFX
         private EventInstance eventInstance;
+        public InteractableAudio interactableAudio;
+
+        private void Update()
+        {
+            if (interactableAudio != null && Input.GetKeyDown(KeyCode.Alpha0))
+            {
+            eventInstance = interactableAudio.DoorOpen(eventInstance, gameObject);
+            }
+
+            if (interactableAudio != null && Input.GetKeyDown(KeyCode.Alpha1))
+            {
+              interactableAudio.DoorClose(eventInstance);  
+            }
+            
+        }
         
 
         protected override void Awake()

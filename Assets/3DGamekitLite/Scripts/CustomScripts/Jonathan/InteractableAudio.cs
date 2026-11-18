@@ -6,7 +6,7 @@ using FMODUnity;
 public class InteractableAudio : ScriptableObject
 {
    // Declares a EventReference that holds a reference to our specific event
-   [SerializeField] private EventReference pickupHealthAudio, boxDestroyAudio, switchAudio, doorAudio;
+   [SerializeField] private EventReference pickupHealthAudio, boxDestroyAudio, switchAudio, doorEvent;
 
    //Declares a method that should play the pickupHealth sound without any 3D positioning
    public void PickUpHealthPlay()
@@ -25,9 +25,17 @@ public class InteractableAudio : ScriptableObject
       RuntimeManager.PlayOneShot(switchAudio, objectTransform.position);
    }
    
-   public void DoorPlay(Transform objectTransform)
+   public EventInstance DoorOpen(EventInstance eventInstance, GameObject obj)
    {
-      RuntimeManager.PlayOneShot(doorAudio, objectTransform.position);
-      
+      eventInstance = RuntimeManager.CreateInstance(doorEvent);
+      RuntimeManager.AttachInstanceToGameObject(eventInstance, obj, obj.GetComponent<Rigidbody>());
+      eventInstance.start();
+      return eventInstance;
+   }
+
+   public void DoorClose(EventInstance eventInstance)
+   {
+      eventInstance.keyOff();
+      eventInstance.release();
    }
 }
