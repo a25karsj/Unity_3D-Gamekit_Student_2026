@@ -67,7 +67,7 @@ namespace Gamekit3D.GameCommands
             }
 
             Debug.Log("Door Opened");
-        }
+        }   
 
         public void FixedUpdate()
         {
@@ -118,12 +118,9 @@ namespace Gamekit3D.GameCommands
                }
 
                enabled = false;
-
                if (OnStopCommand != null)
                    OnStopCommand.Send();
-
                direction *= -1;
-
                Debug.Log("Door Closed");
            }
        }
