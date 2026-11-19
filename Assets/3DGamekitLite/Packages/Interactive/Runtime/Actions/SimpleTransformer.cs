@@ -35,19 +35,9 @@ namespace Gamekit3D.GameCommands
         private EventInstance eventInstance;
         public InteractableAudio interactableAudio;
 
-        private void Update()
-        {
-            if (interactableAudio != null && Input.GetKeyDown(KeyCode.Alpha0))
-            {
-            eventInstance = interactableAudio.DoorOpen(eventInstance, gameObject);
-            }
-
-            if (interactableAudio != null && Input.GetKeyDown(KeyCode.Alpha1))
-            {
-              interactableAudio.DoorClose(eventInstance);  
-            }
-            
-        }
+       
+        //Start and stop for door, needs to be somewhere else to function
+        
         
 
         protected override void Awake()
@@ -62,7 +52,20 @@ namespace Gamekit3D.GameCommands
         public override void PerformInteraction()
         {
             activate = true;
-            if (OnStartCommand != null) OnStartCommand.Send();
+
+            if (OnStartCommand != null)
+                OnStartCommand.Send();
+
+            if (interactableAudio != null)
+            {
+                SimpleTranslator translator = GetComponent<SimpleTranslator>();
+
+                eventInstance = interactableAudio.DoorOpen(
+                    eventInstance,
+                    translator.rigidbody.gameObject
+                );
+            }
+
             Debug.Log("Door Opened");
         }
 
@@ -103,16 +106,26 @@ namespace Gamekit3D.GameCommands
         }
 
        //This is where the door closes
-        void LoopOnce()
-        {
-            position = Mathf.Clamp01(time);
-            if (position >= 1)
-            {
-                enabled = false;
-                if (OnStopCommand != null) OnStopCommand.Send();
-                direction *= -1;
-                Debug.Log("Door Closed");
-            }
-        }
+       void LoopOnce()
+       {
+           position = Mathf.Clamp01(time);
+
+           if (position >= 1)
+           {
+               if (interactableAudio != null && eventInstance.isValid())
+               {
+                   interactableAudio.DoorClose(eventInstance);
+               }
+
+               enabled = false;
+
+               if (OnStopCommand != null)
+                   OnStopCommand.Send();
+
+               direction *= -1;
+
+               Debug.Log("Door Closed");
+           }
+       }
     }
 }
